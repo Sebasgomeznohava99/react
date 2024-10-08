@@ -1,6 +1,7 @@
 import { useState } from "react"
 import './ComponentePadre.css'
-const ComponentePadre = () => {
+
+const ComponentePadre = ({children}) => {
   const [contador, setContador] = useState(0)
   function aumentarContador () {
     if(contador < 10){
@@ -28,6 +29,7 @@ const ComponentePadre = () => {
           <button className="agregar">
             Agregar al Carrito
           </button>
+          { children }
         </div>
     </>
   )

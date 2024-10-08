@@ -18,7 +18,9 @@ function App() {
     <div className='contenedor-gif'>
     <img src = {gif} alt="" className='porky'/>
     </div>
-    <ComponentePadre />
+    <ComponentePadre>
+      <ComponenteHijo/>
+    </ComponentePadre>
     </>
   )
 }
