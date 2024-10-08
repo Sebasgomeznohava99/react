@@ -1,0 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: linear-gradient(90deg, rgb(0, 238, 40) 0%, rgba(0, 255, 136, 0.911) 90%) ;
+}

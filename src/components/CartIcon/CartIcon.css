@@ -1,0 +1,85 @@
+.carrito {
+    height: 40px;
+    position: relative;
+}
+.numero-carrito {
+    position: absolute;
+    top: 21px;
+    right: 106px;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+@media screen and (min-width: 1540px ) {
+.numero-carrito{
+    position: absolute;
+    top: 21px;
+    right: 112px;
+}
+}
+@media screen and (min-width: 1590px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 122px;
+    }
+}
+@media screen and (min-width: 1660px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 126px;
+    }
+}
+@media screen and (min-width: 1700px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 130px;
+    }
+}
+@media screen and (min-width: 1740px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 135px;
+    }
+}
+@media screen and (min-width: 1780px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 140px;
+    }
+}
+@media screen and (min-width: 1820px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 142px;
+    }
+}
+@media screen and (min-width: 1840px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 146px;
+    }
+}
+@media screen and (min-width: 1870px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 150px;
+    }
+}
+@media screen and (min-width: 1890px ) {
+    .numero-carrito{
+        position: absolute;
+        top: 21px;
+        right: 155px;
+    }
+}

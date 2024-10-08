@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(14, 124, 0, 1) 0%, rgb(25, 211, 0) 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+.titulo {
+padding: 10px;
+}
+.lista-ordenada {
+    display: flex;
+}
+.lista-ordenada li {
+    margin: 8px;
+    list-style: none;
+}
+.imagen-ecommerce {
+    width: 90px;
+}
