@@ -1,19 +1,21 @@
 import './ComponenteHijo.css'
-const ComponenteHijo = () => {
-    return (
-        <div >
-            <form action="" >
-                <select name="prendas" id="opciones" className='dropdown'>
-                    <option value=""  selected>Select one...</option>
-                    <option value="Pantalones">Pantalones</option>
-                    <option value="Camisas">Camisas</option>
-                    <option value="Zapatos">Zapatos</option>
-                    <option value="Medias">Medias</option>
-                    <option value="Billetera">Billetera</option>
-                </select>
-            </form>
+import Contador from '../Contador/Contador'
 
+const ComponenteHijo = ({nombre, stock, precio, img, primerApoyo, segundoApoyo, tercerApoyo}) => {
+    return (
+        <>
+        <div className='card-container'>
+            <img className='image-one' src= {img} alt="" />
+            <div className='grid-images'>
+            <img className='image-grid' src ={primerApoyo} alt="" />
+            <img className='image-grid' src = {segundoApoyo} alt="" />
+            <img className='image-grid' src = {tercerApoyo} alt="" />
+            </div>
+            <h2 className='producto-name'>{nombre}</h2>
+            <h3 className='stock'>{precio.toLocaleString('es-ES')}</h3>
+            < Contador stock = {stock} nombre = {nombre}/>
         </div>
+        </>
     )
 }
 

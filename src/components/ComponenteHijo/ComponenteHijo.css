@@ -1,5 +1,34 @@
-.dropdown {
-    margin-left: 10px;
-    width: 110px;
+.card-container {
+    background-color: aquamarine;
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    margin: 20px;
+}
+.image-one {
+    width: 230px;
+    height: 230px;
+    margin: 20px 60px;
+    object-fit: cover;
     border-radius: 10px;
+}
+.grid-images {
+    display: flex;
+    justify-content: space-around;
+}
+.image-grid {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.producto-name {
+    margin: 5px;
+    text-align: center;
+    font-size: 23px;
+}
+.stock {
+
+    margin: 5px;
+    text-align: center;
 }

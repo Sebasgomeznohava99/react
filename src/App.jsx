@@ -3,7 +3,6 @@ import NavBar from './components/Navbar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import gif from "../src/assets/giphy.webp"
 import ComponentePadre from './components/ComponentePadre/ComponentePadre'
-import ComponenteHijo from './components/ComponenteHijo/ComponenteHijo'
 
 function App() {
 
@@ -18,9 +17,7 @@ function App() {
     <div className='contenedor-gif'>
     <img src = {gif} alt="" className='porky'/>
     </div>
-    <ComponentePadre>
-      <ComponenteHijo/>
-    </ComponentePadre>
+    < ComponentePadre />
     </>
   )
 }

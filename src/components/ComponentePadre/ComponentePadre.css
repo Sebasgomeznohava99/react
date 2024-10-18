@@ -1,24 +1,7 @@
-.contenedor-contador {
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-
-}
-.boton-aumento {
-    width: 50px;
-    margin-right: 10px;
-    border-radius: 20px;
-    border: none;
-}
-.boton-resta {
-    margin-left: 10px;
-    width: 50px;
-    border-radius: 20px;
-    border: none;
-}
-.agregar {
-    margin-left: 10px;
-    border-radius: 20px;
-    border: none;
-    width: 150px;
+.cards-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
 }
