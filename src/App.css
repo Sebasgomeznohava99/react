@@ -1,3 +1,11 @@
-.item-list-container {
-    margin: 10px;
+
+.cards-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 550px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 30px;
+    padding: 10px;
 }
