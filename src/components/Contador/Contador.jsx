@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './Contador.css';
-import Carrito from "../Carrito/Carrito";
+
 
 const Contador = ({ stock, nombre }) => {
     const [contador, setContador] = useState(1);

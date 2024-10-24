@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import CartIcon from "../CartIcon/CartIcon"
+import { FaCartShopping } from "react-icons/fa6";
 import ecommerceImage from "../../assets/Photoroom-logo.png"
 const NavBar = () => {
     return (
@@ -13,7 +13,7 @@ const NavBar = () => {
                 <li>Programacion</li>
             </ol>
             <img className="imagen-ecommerce" src={ecommerceImage} alt="" />
-            < CartIcon />
+            <FaCartShopping className="carrito" />
         </div>
     )
 }

@@ -1,7 +1,9 @@
 .cards-productos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: 550px;
     justify-items: center;
     align-items: center;
     margin-top: 25px;
+    gap: 30px;
 }
