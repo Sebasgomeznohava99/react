@@ -6,10 +6,19 @@
 .imagen {
     width: 500px;
     margin-right: 10px;
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid black;
+
 }
 .detailed-description {
     padding: 5px;
 }
 .contador {
     margin-top: 50px;
+}
+.price, .detailed-description{
+    text-align: justify;
+}
+.description {
+    margin-top: 10%;
 }
