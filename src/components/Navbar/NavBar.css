@@ -22,3 +22,15 @@ padding: 10px;
     font-size: 45px;
     position: relative;
 }
+.links-categories {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    margin: 20px;
+}
+.links-categories:hover {
+    color: rgb(140, 0, 255);
+}
+.links-categories:visited {
+    color: rgb(38, 0, 255);
+}
