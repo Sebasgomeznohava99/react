@@ -1,4 +1,3 @@
-import Contador from "../Contador/Contador"
 import './ItemDetail.css'
 
 const ItemDetail = ({producto}) => {
@@ -14,7 +13,11 @@ const ItemDetail = ({producto}) => {
                 <h4 className="price">${producto.price}</h4>
                 <p className="detailed-description">{producto.description}</p>
                 <div className="contador">
-                  <Contador stock={producto.stock} nombre = {producto.name}/>
+                </div>
+                <div className='contenedor-imagenes-secundarias'>
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                  <img src="" alt="" />
                 </div>
             </div>
         </div>

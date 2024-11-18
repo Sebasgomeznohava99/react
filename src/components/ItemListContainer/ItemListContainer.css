@@ -1,7 +1,7 @@
 .card-container {
     background-color: aquamarine;
-    width: 350px;
-    height: 550px;
+    width: 380px;
+    height: 600px;
     border-radius: 20px;
     margin: 20px;
 }
@@ -11,6 +11,21 @@
     margin: 20px 60px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.contenedor-imagenes-alternas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenes-alternas{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
 
 .producto-name {
@@ -24,11 +39,18 @@
 }
 .cards-productos {
     display: grid;
-    grid-template-columns: repeat(4, 350px);
-    grid-template-rows: 550px;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 40px;
     gap: 30px;
     padding: 10px;
+}
+.detail{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.link{
+    text-decoration: none;
 }

@@ -5,7 +5,7 @@ const productos = [
         category: "Camisas",
         price: 45000,
         stock: 7,
-        image: "/camisa-azul.jpg",
+        image: ["/camisa-azul.jpg", "/camisa-azul-2.jpg" , "/camisa-azul-3.jpg", "/camisa-azul-4.jpg"],
         description: "Camisa casual azul, ideal para eventos informales y reuniones. Confeccionada en material suave y cómodo para uso diario.",
     },
     {
@@ -14,7 +14,7 @@ const productos = [
         category: "Zapatillas",
         price: 120000,
         stock: 5,
-        image: "/zapatillas-running.jpg",
+        image: ["/zapatillas-running.jpg", "/zapatillas-running-2.jpg", "/zapatillas-running-3.jpg", "/zapatillas-running-4.jpg" ],
         description: "Zapatillas especializadas para running, ligeras y con gran soporte, diseñadas para mejorar el rendimiento en cada carrera.",
     },
     {
@@ -23,7 +23,7 @@ const productos = [
         category: "Gorras",
         price: 35000,
         stock: 4,
-        image: "/black-cap.jpg",
+        image: ["/black-cap.jpg", "/black-cap-2.jpg", "/black-cap-3.jpg", "/black-cap-4.jpg"],
         description: "Gorra deportiva negra, perfecta para entrenamientos y salidas informales, con un diseño versátil y moderno.",
     },
     {
@@ -32,7 +32,7 @@ const productos = [
         category: "Hoodies",
         price: 85000,
         stock: 6,
-        image: "/gray-hoodie.jpg",
+        image: ["/gray-hoodie.jpg", "/gray-hoodie-2.jpg", "/gray-hoodie-3.jpg", "/gray-hoodie-4.jpg"],
         description: "Hoodie gris con capucha, ideal para el clima frío, fabricado con materiales suaves y un diseño moderno.",
     },
     {
@@ -41,7 +41,7 @@ const productos = [
         category: "Camisas",
         price: 55000,
         stock: 3,
-        image: "/camisa-cuadros.jpg",
+        image: ["/red-shirt.jpg", "/red-shirt-2.jpg", "/red-shirt-3.jpg", "/red-shirt-4.jpg"],
         description: "Camisa a cuadros en tonos rojos, perfecta para un look casual y cómodo. Ideal para combinar con jeans o pantalones de lona.",
     },
     {
@@ -50,7 +50,7 @@ const productos = [
         category: "Zapatillas",
         price: 130000,
         stock: 8,
-        image: "/white-shoes.jpg",
+        image: ["/white-shoes.jpg", "/white-shoes-2.jpg", "/white-shoes-3.jpg", "/white-shoes-4.jpg"],
         description: "Zapatillas urbanas en color blanco, cómodas y con un diseño moderno, ideales para el uso diario y para combinar con cualquier atuendo.",
     },
     {
@@ -59,7 +59,7 @@ const productos = [
         category: "Gorras",
         price: 40000,
         stock: 2,
-        image: "/backpack-cap.jpg",
+        image: ["/snapback-cap.jpg", "/snapback-cap-2.jpg", "/snapback-cap-3.jpg", "/snapback-cap-4.jpg"],
         description: "Gorra snapback en color gris, con un estilo clásico y versátil. Perfecta para un look casual.",
     },
     {
@@ -68,7 +68,7 @@ const productos = [
         category: "Hoodies",
         price: 90000,
         stock: 9,
-        image: "/black-hoodie.jpg",
+        image: ["/black-hoodie.jpg", "/black-hoodie-2.jpg", "/black-hoodie-3.jpg", "/black-hoodie-4.jpg"],
         description: "Hoodie básico en color negro, perfecto para un estilo casual y cómodo, con capucha para protección en climas fríos.",
     },
 ];
