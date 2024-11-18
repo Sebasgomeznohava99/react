@@ -1,0 +1,35 @@
+.container-contador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.botones-arriba{
+    display: flex;
+    margin: 10px;
+}
+.suma, .resta{
+height: 25px;
+width: 25px;
+text-align: center;
+vertical-align: center;
+border-radius: 20px;
+background-color: antiquewhite;
+}
+.suma{
+    margin-left: 10px;
+}
+.resta{
+    margin-right: 10px;
+}
+.agregar{
+    border-radius: 20px;
+    border: none;
+    background-color: antiquewhite;
+    width: 200px;
+    transition: all 0.5s ease;
+}
+.agregar:hover{
+    border: 3px solid black;
+    font-weight: bold;
+}

@@ -3,6 +3,7 @@ import { getProducts } from "../../data/data.js"
 import './ItemListContainer.css'
 import ItemList from "./ItemList.jsx"
 import { useParams } from "react-router-dom"
+
 function ItemListContainer() {
     const [productos, setProductos] = useState([])
     const { idCategory } = useParams()

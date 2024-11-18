@@ -19,6 +19,9 @@ const NavBar = () => {
                 <li className="categories">
                     <Link className="links-categories" to = "/category/Hoodies">Hoodies</Link>
                 </li>
+                <li>
+                    <Link to = "/contact/form"  className="links-categories">Contacto</Link>
+                </li>
             </ol>
             <Link to = '/'>
             <img className="imagen-ecommerce" src={ecommerceImage} alt="" />
