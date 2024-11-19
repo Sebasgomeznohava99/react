@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
+import { useContext } from "react"
+import { CartContext } from "../context/CartContext"
 const Item = ({producto}) => {
+
+  const {addProductInCart} = useContext(CartContext)
+
+  const addProduct = (count) => {
+    const productCart = {...producto, quantity: count}
+    addProductInCart(productCart)
+  }
   return (
     <>
     <div className='card-container' >
@@ -12,7 +21,7 @@ const Item = ({producto}) => {
               <img className="imagenes-alternas" src= {producto.image[2]} alt="" />
               <img className="imagenes-alternas" src= {producto.image[3]} alt="" />
             </div>
-              <ItemCount producto = {producto}/>
+              <ItemCount producto = {producto} addProduct = {addProduct}/>
             <div className="detail">
             <Link to = {'/detail/' + producto.id} className="link">Ver Detalle</Link>
             </div>

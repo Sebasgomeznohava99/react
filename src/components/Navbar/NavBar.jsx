@@ -1,5 +1,5 @@
 import "./NavBar.css"
-import { FaCartShopping } from "react-icons/fa6";
+import CartIcon from "../CartIcon/CartIcon";
 import ecommerceImage from "../../assets/Photoroom-logo.png"
 import { Link } from "react-router-dom";
 const NavBar = () => {
@@ -26,7 +26,7 @@ const NavBar = () => {
             <Link to = '/'>
             <img className="imagen-ecommerce" src={ecommerceImage} alt="" />
             </Link>
-            <FaCartShopping className="carrito" />
+            <CartIcon/>
         </div>
     )
 }

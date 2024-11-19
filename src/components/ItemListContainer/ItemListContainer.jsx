@@ -23,9 +23,6 @@ function ItemListContainer() {
         .catch ((error) => {
             console.error(error)
         })
-        .finally (() => {
-            console.log('Finalizó la promesa')
-        })
     }, [idCategory])
 
 return (

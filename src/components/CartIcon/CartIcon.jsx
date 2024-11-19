@@ -1,11 +1,15 @@
-import carritoCompras from "../../assets/carrito.png"
 import "./CartIcon.css"
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const CartIcon = () => {
+    const { totalQuantity } = useContext(CartContext)
     return (
-        <div>
-            <img src= {carritoCompras} alt="" className="carrito"/>
-            <p className="numero-carrito">1</p>
-        </div>
+        <Link to = "/cart" className="contenedor-carro">
+            <FaCartShopping className="carrito" />
+            <p className="numero">{ totalQuantity() }</p>
+        </Link >
     )
 }
 
