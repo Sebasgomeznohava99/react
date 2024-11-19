@@ -14,7 +14,17 @@
     color: black;
 }
 .lista-carrito-productos{
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.caracteristicas-carrito{
+display: flex;
+align-items: center;
+}
+.caracteristicas-carrito p{
+    margin: 55px;
 }
 .imagen-producto-carrito{
     width: 200px;
@@ -22,4 +32,17 @@
     object-fit: cover;
     border-radius: 20px;
     margin-bottom: 5px;
+}
+.total{
+    text-align: end;
+    margin-right: 90px;
+}
+.borrar-carrito{
+    width: 23px;
+    height: 40px;
+    color: red;
+    background: transparent;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
 }
