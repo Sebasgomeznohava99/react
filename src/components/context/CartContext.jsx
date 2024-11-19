@@ -8,8 +8,18 @@ const CartProvider = ({ children }) => {
 const [cart, setCart] = useState([])
 
 const addProductInCart = (newProduct) => {
-    setCart ([ ...cart, newProduct ])
-    console.log(cart)
+    const productExists = cart.find(product => product.id === newProduct.id);
+
+    if (productExists) {
+        const updatedCart = cart.map(product =>
+            product.id === newProduct.id
+                ? { ...product, quantity: product.quantity + newProduct.quantity }
+                : product
+        );
+        setCart(updatedCart);
+    } else {
+        setCart([...cart, newProduct]);
+    }
 }
 
 const totalPrice = () => {
@@ -26,8 +36,13 @@ const totalQuantity = () => {
     const quantity = cart.reduce ((total, productCart) => total + productCart.quantity, 0)
     return quantity
 }
+
+
+const deleteCart = () => {
+    setCart([])
+}
     return (
-        <CartContext.Provider value = { {cart, addProductInCart, totalQuantity, totalPrice, deleteProductById} }>
+        <CartContext.Provider value = { {cart, addProductInCart, totalQuantity, totalPrice, deleteProductById, deleteCart} }>
             {children}
         </CartContext.Provider>
     )

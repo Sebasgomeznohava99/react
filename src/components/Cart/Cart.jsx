@@ -3,7 +3,7 @@ import { CartContext } from "../context/CartContext"
 import { FaRegTrashAlt } from "react-icons/fa";
 
 const Cart = () => {
-    const { cart, totalPrice, deleteProductById }= useContext(CartContext)
+    const { cart, totalPrice, deleteProductById, deleteCart }= useContext(CartContext)
   return (
     <div>
         <h2 className="titulo">Productos en el Carrito</h2>
@@ -22,7 +22,10 @@ const Cart = () => {
                 </div>
             ))
         }
+        <div className="total-borrar">
         <p className="total"><strong>Precio Total Compra:</strong> {(totalPrice()).toLocaleString('es-ES')} COP</p>
+        <button className="borrar-carro-completo" onClick={deleteCart}>Borrar Carrito</button>
+        </div>
     </div>
   )
 }
