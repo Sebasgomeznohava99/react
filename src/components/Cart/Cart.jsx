@@ -1,9 +1,18 @@
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
 import { FaRegTrashAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
     const { cart, totalPrice, deleteProductById, deleteCart }= useContext(CartContext)
+if (cart.length === 0){
+    return (
+        <div className="contenedor-no-productos">
+            <h2>No hay productos en el carrito 😮‍💨</h2>
+            <Link to="/">Volver al Inicio</Link>
+        </div>
+    )
+}
   return (
     <div>
         <h2 className="titulo">Productos en el Carrito</h2>
