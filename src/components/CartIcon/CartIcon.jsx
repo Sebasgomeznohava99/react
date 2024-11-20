@@ -11,7 +11,7 @@ const CartIcon = () => {
     const quantity = totalQuantity()
     return (
         <Link to = "/cart" className="contenedor-carro">
-            <FaCartShopping className="carrito" />
+            <FaCartShopping className={quantity === 0 ? "carrito-vacio" : "carrito-lleno"} />
             <p className="numero">{quantity >= 1 && quantity}</p>
         </Link >
     )
