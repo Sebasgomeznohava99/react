@@ -1,25 +1,36 @@
 import './ItemDetail.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useContext } from 'react'
 import ItemCount from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
-const ItemDetail = ({producto}) => {
-  
-  const {addProductInCart} = useContext(CartContext)
+const ItemDetail = ({ producto }) => {
+  const { addProductInCart } = useContext(CartContext);
 
-  const [currentImage, setCurrentImage]= useState(producto.image[0])
 
-  const images = producto.image.filter((image) => image != currentImage)
+  const [currentImage, setCurrentImage] = useState(producto.image && producto.image.length > 0 ? producto.image[0] : null);
 
-  const [showItemCount, setShowItemCount] = useState(true)
+
+  useEffect(() => {
+    if (producto.image && producto.image.length > 0) {
+      setCurrentImage(producto.image[0]);
+    }
+  }, [producto]);
+
+  const images = producto.image ? producto.image.filter((image) => image !== currentImage) : [];
+
+  const [showItemCount, setShowItemCount] = useState(true);
 
   const addProduct = (count) => {
-   
-    const productCart = {...producto, quantity: count}
-    addProductInCart(productCart)
-    setShowItemCount(false)
+    const productCart = { ...producto, quantity: count };
+    addProductInCart(productCart);
+    setShowItemCount(false);
+  };
+
+  if (!producto.image || producto.image.length === 0) {
+    return <p>Cargando producto...</p>;
   }
+
   return (
     <>
     <div className="contenedor">
