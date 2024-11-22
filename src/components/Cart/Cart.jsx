@@ -34,6 +34,7 @@ if (cart.length === 0){
         <div className="total-borrar">
         <p className="total"><strong>Precio Total Compra:</strong> {(totalPrice()).toLocaleString('es-ES')} COP</p>
         <button className="borrar-carro-completo" onClick={deleteCart}>Borrar Carrito</button>
+        <Link to = "/checkout" className="checkout-button">Terminar mi Compra</Link>
         </div>
     </div>
   )
