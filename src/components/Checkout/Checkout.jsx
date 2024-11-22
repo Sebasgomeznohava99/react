@@ -2,7 +2,7 @@ import { useState } from "react"
 import FormCheckout from "./FormCheckout"
 import { useContext } from "react"
 import { CartContext } from "../context/CartContext"
-import { Timestamp, addDoc, collection, doc, setDoc } from "firebase/firestore"
+import { Timestamp, addDoc, collection } from "firebase/firestore"
 import db from "../../db/db"
 import { Link } from "react-router-dom"
 
@@ -46,18 +46,9 @@ const uploadOrder = (newOrder) => {
     .then((response) =>  setIdOrder(response.id) )
     .catch((error) => console.log(error))
     .finally(() => {
-        updateStock()
+        //Cuando Finalizamos la orden, borremos la orden del carrito
+        deleteCart()
     })
-}
-
-const updateStock  = () => {
-    cart.map(( { id, quantity, ...dataProduct } ) =>{
-        const productRef = doc(bd,"products", id)
-        setDoc(productRef, { ...dataProduct, stock: dataProduct.stock - quantity})
-    } )
-
-    //Cuando Finalizamos la orden, y finalicemos la actualización de stick, borremos la orden del carrito
-    deleteCart()
 }
 
 return (
